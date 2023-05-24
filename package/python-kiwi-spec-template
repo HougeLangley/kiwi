@@ -91,17 +91,26 @@ Recommends:     dpkg
 %endif
 %if 0%{?suse_version}
 Recommends:     gpg2
-Recommends:     dnf
 Recommends:     debootstrap
 Recommends:     dpkg
+%if 0%{?suse_version} >= 1650
+Recommends:     dnf
+%endif
 %endif
 # package managers required by distro
 %if 0%{?fedora} || 0%{?rhel} >= 8 || 0%{?suse_version} >= 1650
 Provides:       kiwi-packagemanager:microdnf
 Requires:       microdnf
 %endif
+%if 0%{?fedora} >= 39
+Requires:       dnf5
+Requires:       dnf5-plugins
+%else
 %if 0%{?fedora} || 0%{?rhel} || 0%{?suse_version} >= 1650
 Requires:       dnf
+%endif
+%endif
+%if 0%{?fedora} || 0%{?rhel} || 0%{?suse_version} >= 1650
 Provides:       kiwi-packagemanager:dnf
 Provides:       kiwi-packagemanager:yum
 %endif
