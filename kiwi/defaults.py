@@ -1824,7 +1824,7 @@ class Defaults:
 
         :rtype: str
         """
-        return 'dnf'
+        return 'dnf4'
 
     @staticmethod
     def get_default_packager_tool(package_manager):
@@ -1837,7 +1837,7 @@ class Defaults:
 
         :rtype: str
         """
-        rpm_based = ['zypper', 'dnf', 'microdnf']
+        rpm_based = ['zypper', 'dnf', 'dnf4', 'microdnf']
         deb_based = ['apt']
         if package_manager in rpm_based:
             return 'rpm'
