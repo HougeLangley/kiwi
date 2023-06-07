@@ -407,8 +407,7 @@
         <package name="zip"/>
         <package name="aaa_base" replaces="ntp"/>
         <ignore name="ntp"/>
-        <package name="aaa_base" replaces="busybox-gawk"/>
-        <ignore name="busybox-gawk"/>
+        <package name="gawk"/>
 
         <!-- list-kde.sh -->
         <package name="aaa_base" replaces="gvfs"/>
