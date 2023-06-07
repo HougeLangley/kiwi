@@ -16,10 +16,10 @@
         <rpm-check-signatures>false</rpm-check-signatures>
         <bootsplash-theme>bgrt</bootsplash-theme>
         <bootloader-theme>openSUSE</bootloader-theme>
-        <type image="iso" flags="overlay" firmware="efi" kernelcmdline="console=ttyS0" hybridpersistent_filesystem="ext4" hybridpersistent="true" mediacheck="true" bootloader="grub2"/>
+        <type image="iso" flags="overlay" firmware="uefi" kernelcmdline="splash=silent quiet systemd.show_status=yes" hybridpersistent_filesystem="ext4" hybridpersistent="true" mediacheck="true" bootloader="grub2"/>
     </preferences>
     <users>
-        <user password="" home="/root" name="root" groups="root"/>
+        <user groups="root" name="root" password="" home="/root"/>
     </users>
     <repository type="rpm-md" alias="Tumbleweed_OSS" imageinclude="true" priority="99">
         <source path="https://mirrors.ustc.edu.cn/opensuse/tumbleweed/repo/oss/"/>
