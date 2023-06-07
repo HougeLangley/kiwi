@@ -550,7 +550,7 @@
   <packages type="bootstrap">
         <package name="filesystem"/>
         <package name="openSUSE-release"/>
-        <package name="openSUSE-release-livecd-kde"/>
+        <!-- package name="openSUSE-release-livecd-kde"/ -->
         <package name="branding-openSUSE"/>
   </packages>
 </image>
