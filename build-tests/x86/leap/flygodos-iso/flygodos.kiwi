@@ -546,6 +546,8 @@
         <package name="opensuse-welcome"/>
         <package name="aaa_base" replaces="bluedevil5"/>
         <ignore name="bluedevil5"/>
+        <package name="aaa_base" replaces="busybox-gawk"/>
+        <ignore name="busybox-gawk"/>
   </packages>
   <packages type="bootstrap">
         <package name="filesystem"/>
