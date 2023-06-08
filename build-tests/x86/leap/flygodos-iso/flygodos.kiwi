@@ -27,9 +27,9 @@
     <repository type="rpm-md" alias="Tumbleweed_non-OSS" imageinclude="true" priority="99">
         <source path="https://mirrors.ustc.edu.cn/opensuse/tumbleweed/repo/non-oss/"/>
     </repository>
-    <repository type="rpm-md" alias="Tumbleweed_Update" imageinclude="true" priority="99">
-        <source path="https://mirrors.ustc.edu.cn/opensuse/update/tumbleweed/"/>
-    </repository>
+    <!-- repository type="rpm-md" alias="Tumbleweed_Update" imageinclude="true" priority="99" -->
+        <!-- source path="https://mirrors.ustc.edu.cn/opensuse/update/tumbleweed/"/ -->
+    <!-- /repository -->
     <packages type="image" patternType="plusRecommended">
         <package name="kernel-default"/>
         <package name="gfxboot-branding-openSUSE" bootinclude="true" bootdelete="true" arch="i686"/>
