@@ -335,7 +335,6 @@
         <ignore name="vim-data"/>
         <package name="aaa_base" replaces="vim"/>
         <ignore name="vim"/>
-        <package name="aaa_base" replaces="busybox-coreutils"/>
         <ignore name="busybox-coreutils"/>
         <package name="vim-small"/>
         <package name="kernel-default"/>
