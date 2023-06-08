@@ -21,8 +21,8 @@
     <users>
         <user groups="root" name="root" password="" home="/root"/>
     </users>
-    <repository type="rpm-md" alias="Leap-OSS" imageinclude="true" priority="99">
-        <source path="https://download.opensuse.org/distribution/leap/15.4/repo/oss/"/>
+    <repository type="rpm-md" alias="Factory-OSS" imageinclude="true" priority="99">
+        <source path="https://https://mirrors.ustc.edu.cn/opensuse/factory/repo/oss/"/>
     </repository>
     <!-- repository type="rpm-md" alias="Tumbleweed_non-OSS" imageinclude="true" priority="99" -->
         <!-- source path="https://mirrors.ustc.edu.cn/opensuse/tumbleweed/repo/non-oss/"/ -->
